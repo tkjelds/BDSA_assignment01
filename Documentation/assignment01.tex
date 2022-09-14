@@ -10,7 +10,9 @@
 Link to \href{https://github.com/tkjelds/BDSA_assignment01}{Github} 
 \section*{C\#}
 \begin{figure}[!htb]
-    \includegraphics[scale = 0.7]{img/GreaterCount.png}
+    \begin{center}
+        \includegraphics[scale = 0.7]{img/GreaterCount.png}
+    \end{center}
 \end{figure}
 In the first example, T has to implement the ICompareable interface. \\
 In the second exapmle, T has to implement U, which implements ICompareable. \\ 
@@ -51,13 +53,13 @@ The insulin pump, would focus more heavily on the quality attribute dependabilit
     \item The problem was, that if a doctor filled out a formular wrong the formular would go into an unkown queue, instead of giving an error message. Its a tricky situation because either this was intentional an design decision and the problem was caused by improper training when accesing the queues, or the problem was caused by improper error handling.
     \item There are two solutions depending on the which one of the problems that we are dealing with. The first potential problem could be solved with better training, if it is true that the unkown queue is a feature and not a bug. Otherwise better error handling, to make sure that the formular is not able to sent out, unless it was filled out correctly.
     \item Having the impetus focussed on the people using the system, instead of focussing on developing a system that is not so prone to error, would in my opinion be a better choice. So developing a system with better error handling seems the better choice. 
-    \item 
+
 \end{enumerate}
 \subsubsection*{Kodefejl i Sundhedsplatformen: Fem patienter har fået forkert dosis medicin}
 \begin{enumerate}
     \item The problem was caused by code changes, which created a bug in an integrated system. 
     \item The problem could have been caught by having better automated testing, and running those tests every single time a new code change happened.
     \item The description of the solution in the article corresponds pretty well with the one propossed above.
-    \item 
 \end{enumerate}
+\subsubsection*{\textbf{4}}If i were to develop etiher of these system two aspects of ethics would be important that of confidentiality and compentence. Confidentiality, because we are dealing with sensitive information, it would be unethical to potentially reveal any of it. Compentence Because, if i were not equipped fully to develop the system, the outcomes could lead to harm for the patients.  
 \end{document}
