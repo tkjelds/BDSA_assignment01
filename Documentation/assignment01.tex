@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\title{Assignment 1}
+\author{Tore Kjelds (tokj@itu.dk)}
+\date{\today}
+
+\begin{document}
+\maketitle
+Link to \href{https://github.com/tkjelds/BDSA_assignment01}{Github} \: https\://github.com/tkjelds/BDSA\_assignment01 \\
+\section*{C\#}
+\begin{figure}[!htb]
+    \begin{center}
+        \includegraphics[scale = 0.7]{img/GreaterCount.png}
+    \end{center}
+\end{figure}
+In the first example, T has to implement the ICompareable interface. \\
+In the second exapmle, T has to implement U, which implements ICompareable. \\ 
+The first method, there is no certainty that the method can compare T and U, since only T has the interface implmented. \\
+The second method, there is a certainty that the method can compare T and U, since they both implement the ICompareable interface. \\ 
+\newpage
+\section*{Software Engineering}
+\subsection*{Exercise 1}
+This is the slighty curated version of the noun verb technique. (Slighty curated meaning, removed multiple occurences of the same noun)
+\begin{table}[!htb]
+    \begin{tabular}{l|l}
+    \hline
+    \multicolumn{1}{|l|}{Noun} & \multicolumn{1}{l|}{Verb}                                    \\ \hline
+    Version control system     & Records ( changes to file(s))                                \\
+                               & Recall (specific versions)                                   \\
+                               & revert (selected files to a previous State)                  \\
+                               & Contain(source code, configuration data, diagrams, binaries) \\
+                               & compare (changes over time)                                  \\
+                               & See who modified something                                   \\
+    Changes                    &                                                              \\
+    file(s)                    &                                                              \\
+    Versions                   &                                                              \\
+    source code                &                                                              \\
+    Configuration data         &                                                              \\
+    Diagrams                   &                                                              \\
+    Binaries                   &                                                              \\
+    state                      &                                                              \\
+    project                    &                                                              \\
+    Time                       &                                                             
+    \end{tabular}
+    \end{table}
+\\
+\begin{enumerate}
+    \item I dont quite know what is meant by domain in this context.
+    \item \textbf{File} is already something that is handled by C\# and dotnet, so they dont need to make an explicit class for that. They dont use \textbf{state} explicitly, they instead use class tree, which in terms of the noun/verb analysis fulfills the same requirements. 
+\end{enumerate}
+\subsection*{Exercise 2}
+\textbf{CoronaPas} would be a Interactive transaction-based application. I base this on the communication aspect between the server which verifies that the user has had vaccine. An argument could be made that this also falls in the category of systems of systems, since coronapas interacts with alot of different software systems. 
+\\
+\textbf{Git} would also be an Interactive transaction-based application. I base this on the transactions that occur when pulling and pushing. 
+\subsection*{Exercise 3} 
+\textbf{CoronaPas} would be considered a \textit{Generic product}, since it is offered on the open market to any one who wishes to download. An argument could be made that there are elements of \textit{bespoke} software, since it was commisioned by another company.
+\\
+\textbf{Git} Would be considered a \textit{Generic product}, since it is offered to any one, who wishes to use.
+\subsection*{Exercise 4}
+\textbf{Git} \\
+I would argue that git focusses equally on the quality attributes. Git needs to be dependable, as if the service would be down, the companies using it would be losing money since the people working would'nt be able to push their commits to the pipeline. 
+Efficiency is also an important attribute for git, since the amount of individual transaction occuring are very large, it is important to handle them efficiently.
+Lastly, maintainability is also important for git, since the software needs to evolve with its users needs.
+\textbf{CoronaPas} \\
+I would argue that the Corona pas application leans more heavily towards security, since the application handles sensitive information about the user, and that specific legislations has strict requirements when it comes to handleing sensitive user data.
+It would also skew towards dependability since alot of our institutions and places require people to show coronapas, meaning unexpected downtime would hinder alot of normal day to day life.
+Of course Efficiency is also important, since most of the people in Denmark will be using the application, there will be a lot of transactions being made.
+\textbf{Insulin pump control} \\
+The insulin pump, would focus more heavily on the quality attribute dependability, since the result of having an inadequate dose or too frequent or infrequent dosages could lead to dangerous medical outcomes.
+\subsection*{Exercise 5}
+\begin{enumerate}
+    \item Gitlet was written to show how Git works, not as a fully fledged software product. Meaning that it does not require the additional work of having a meaningfull architecture since it is a learning tool.
+    \item You could look through the source code and look for file dependancies and look at just the overall file structure. Through the dependacies you could get an overview of the hierarchy.
+    \item Firstly, git and gitlet is written in two different programming languages, c and javaScript. GitLets design is alot simpler, having it all contained in one file, while git has lots of different files and dependencies.
+    \item As gitlet was meant to be a simpler version of git, it focusses alot more an the acceptability product characteristic. Since it was designed to be more understandable and usable for a larger demographic. 
+    Git on the other hand focusses more on maintainability by having a set architecture.
+\end{enumerate}
+\subsection*{Exercise 6}
+\subsubsection*{Softwareproblemer skadede mere end 100 patienter på amerikansk hospital}
+\begin{enumerate}
+    \item The problem was, that if a doctor filled out a formular wrong the formular would go into an unkown queue, instead of giving an error message. Its a tricky situation because either this was intentional an design decision and the problem was caused by improper training when accesing the queues, or the problem was caused by improper error handling.
+    \item There are two solutions depending on the which one of the problems that we are dealing with. The first potential problem could be solved with better training, if it is true that the unkown queue is a feature and not a bug. Otherwise better error handling, to make sure that the formular is not able to sent out, unless it was filled out correctly.
+    \item Having the impetus focussed on the people using the system, instead of focussing on developing a system that is not so prone to error, would in my opinion be a better choice. So developing a system with better error handling seems the better choice. 
+
+\end{enumerate}
+\subsubsection*{Kodefejl i Sundhedsplatformen: Fem patienter har fået forkert dosis medicin}
+\begin{enumerate}
+    \item The problem was caused by code changes, which created a bug in an integrated system. 
+    \item The problem could have been caught by having better automated testing, and running those tests every single time a new code change happened.
+    \item The description of the solution in the article corresponds pretty well with the one propossed above.
+\end{enumerate}
+\subsubsection*{\textbf{4}}If i were to develop etiher of these system two aspects of ethics would be especially important that of confidentiality and compentence. Confidentiality, because we are dealing with sensitive information, it would be unethical to potentially reveal any of it. Compentence Because, if i were not equipped fully to develop the system, the outcomes could lead to harm for the patients.  
+\end{document}

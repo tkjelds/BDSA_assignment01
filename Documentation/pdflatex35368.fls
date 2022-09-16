@@ -1,0 +1,5 @@
+PWD d:/Documents/ITU/BDSA/BDSA2022/BDSA_assignment01/Documentation
+INPUT c:/texlive/2021/texmf.cnf
+INPUT c:/texlive/2021/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT d:/Documents/ITU/BDSA/BDSA2022/BDSA_assignment01/Documentation/assignment01.tex
