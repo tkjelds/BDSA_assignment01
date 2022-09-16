@@ -7,7 +7,7 @@
 
 \begin{document}
 \maketitle
-Link to \href{https://github.com/tkjelds/BDSA_assignment01}{Github} 
+Link to \href{https://github.com/tkjelds/BDSA_assignment01}{Github} \: https\://github.com/tkjelds/BDSA\_assignment01 \\
 \section*{C\#}
 \begin{figure}[!htb]
     \begin{center}
@@ -18,8 +18,37 @@ In the first example, T has to implement the ICompareable interface. \\
 In the second exapmle, T has to implement U, which implements ICompareable. \\ 
 The first method, there is no certainty that the method can compare T and U, since only T has the interface implmented. \\
 The second method, there is a certainty that the method can compare T and U, since they both implement the ICompareable interface. \\ 
+\newpage
 \section*{Software Engineering}
 \subsection*{Exercise 1}
+This is the slighty curated version of the noun verb technique. (Slighty curated meaning, removed multiple occurences of the same noun)
+\begin{table}[!htb]
+    \begin{tabular}{l|l}
+    \hline
+    \multicolumn{1}{|l|}{Noun} & \multicolumn{1}{l|}{Verb}                                    \\ \hline
+    Version control system     & Records ( changes to file(s))                                \\
+                               & Recall (specific versions)                                   \\
+                               & revert (selected files to a previous State)                  \\
+                               & Contain(source code, configuration data, diagrams, binaries) \\
+                               & compare (changes over time)                                  \\
+                               & See who modified something                                   \\
+    Changes                    &                                                              \\
+    file(s)                    &                                                              \\
+    Versions                   &                                                              \\
+    source code                &                                                              \\
+    Configuration data         &                                                              \\
+    Diagrams                   &                                                              \\
+    Binaries                   &                                                              \\
+    state                      &                                                              \\
+    project                    &                                                              \\
+    Time                       &                                                             
+    \end{tabular}
+    \end{table}
+\\
+\begin{enumerate}
+    \item I dont quite know what is meant by domain in this context.
+    \item \textbf{File} is already something that is handled by C\# and dotnet, so they dont need to make an explicit class for that. They dont use \textbf{state} explicitly, they instead use class tree, which in terms of the noun/verb analysis fulfills the same requirements. 
+\end{enumerate}
 \subsection*{Exercise 2}
 \textbf{CoronaPas} would be a Interactive transaction-based application. I base this on the communication aspect between the server which verifies that the user has had vaccine. An argument could be made that this also falls in the category of systems of systems, since coronapas interacts with alot of different software systems. 
 \\
@@ -61,5 +90,5 @@ The insulin pump, would focus more heavily on the quality attribute dependabilit
     \item The problem could have been caught by having better automated testing, and running those tests every single time a new code change happened.
     \item The description of the solution in the article corresponds pretty well with the one propossed above.
 \end{enumerate}
-\subsubsection*{\textbf{4}}If i were to develop etiher of these system two aspects of ethics would be important that of confidentiality and compentence. Confidentiality, because we are dealing with sensitive information, it would be unethical to potentially reveal any of it. Compentence Because, if i were not equipped fully to develop the system, the outcomes could lead to harm for the patients.  
+\subsubsection*{\textbf{4}}If i were to develop etiher of these system two aspects of ethics would be especially important that of confidentiality and compentence. Confidentiality, because we are dealing with sensitive information, it would be unethical to potentially reveal any of it. Compentence Because, if i were not equipped fully to develop the system, the outcomes could lead to harm for the patients.  
 \end{document}
